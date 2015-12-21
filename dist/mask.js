@@ -1,7 +1,7 @@
 /*!
  * angular-ui-mask
  * https://github.com/angular-ui/ui-mask
- * Version: 1.6.6 - 2015-12-17T04:05:05.328Z
+ * Version: 1.6.6 - 2015-12-21T08:27:33.064Z
  * License: MIT
  */
 
@@ -147,6 +147,7 @@ angular.module('ui.mask', [])
                                 linkOptions = options;
                             }
 
+                            initialize(iAttrs.uiMask);
                             iAttrs.$observe('uiMask', initialize);
                             if (angular.isDefined(iAttrs.uiMaskPlaceholder)) {
                                 iAttrs.$observe('uiMaskPlaceholder', initPlaceholder);

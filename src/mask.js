@@ -137,6 +137,7 @@ angular.module('ui.mask', [])
                                 linkOptions = options;
                             }
 
+                            initialize(iAttrs.uiMask);
                             iAttrs.$observe('uiMask', initialize);
                             if (angular.isDefined(iAttrs.uiMaskPlaceholder)) {
                                 iAttrs.$observe('uiMaskPlaceholder', initPlaceholder);
